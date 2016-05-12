@@ -2,9 +2,11 @@
 Team project for SJSU - CMPE273 - Prof. Sithu Aung's Class
 
 Team: GoRest 
+
 Project Title: Service Level Agreement
 
 Members: 
+
 i.  Shounak Gujarathi
 ii.  Saikrishnan Baskaran
 iii. Kartik Patil
@@ -41,20 +43,24 @@ The working of server is coded in the js files of the project. More particularly
 ******************************Intelligent Client*************************************************************************************
 Client uses the information provided by the server to implement the remedial logic.
 How this works is that in case the server's performance is going down,
-i.e, i.   Used Memory > Available Memory
-     ii.  CPU Usage > 80%
-     iii. High number of current connections, etc.
+i.e, 
+
+i.   Used Memory > Available Memory
+ii.  CPU Usage > 80%
+iii. High number of current connections, etc.
 then, client will take remedial actions like,
-       i.   Decreasing the number of retires per minute (To not clog the server)
-       ii.  Increasing the timeout (So that the server can take more time to process the request before it being ruled as failed)
-       iii. Increasing the number of retries, etc.
+
+i.   Decreasing the number of retires per minute (To not clog the server)
+ii.  Increasing the timeout (So that the server can take more time to process the request before it being ruled as failed)
+iii. Increasing the number of retries, etc.
 
 The client also consists of a Circuit Breaker that trips when there failures are detected consecutively.
 
 The working of this client is demonstated in the RestClientFinal.html file.
 
 ****************************Testing and Monitoring**********************************************************************************
-We've used newrelic.com's API to monitor the health of the server and provide us with graphical representation of
+We've used newrelic.com's API to monitor the health of the server and provide us with graphical representation of:
+
 i.   Throughput
 ii.  Transaction Time
 iii. Apdex Score, etc.
@@ -66,7 +72,11 @@ A dynamic view of system health, updated every 2 seconds can be seen using the U
 
 
 Project contribution:
+
 1. Shounak Gujarathi (Architecture and Server-side implementation) 
+
 2. SaiKrishanan Bhaskaran (Client Side implementation including the circuit breaker) 
+
 3. Kartik Patil (Client side remedial logic, New Relic integration) 
+
 4. Sivakumar Sivaraman (Dynamic UI, Ajax integration)
