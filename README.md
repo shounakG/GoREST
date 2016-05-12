@@ -1,13 +1,14 @@
 # GoREST
 Team project for SJSU - CMPE273 - Prof. Sithu Aung's Class
 
-Team GoRest
+Team: GoRest 
 Project Title: Service Level Agreement
 
-Members: i.  Shounak Gujarathi
-	ii.  Saikrishnan Baskaran
-	iii. Kartik Patil
-	iv.  Sivakumar Sivaraman
+Members: 
+i.  Shounak Gujarathi
+ii.  Saikrishnan Baskaran
+iii. Kartik Patil
+iv.  Sivakumar Sivaraman
 
 Technology used: Node.js using Express framework
 
@@ -37,7 +38,7 @@ connection is denied service (Status Code: 503) with a error message saying
 
 The working of server is coded in the js files of the project. More particularly the monitoring logic is given in index.js.
 
-******************************Intelligent Client*******************************************************************************************
+******************************Intelligent Client********************************************************************************
 Client uses the information provided by the server to implement the remedial logic.
 How this works is that in case the server's performance is going down,
 i.e, i.   Used Memory > Available Memory
@@ -52,20 +53,20 @@ The client also consists of a Circuit Breaker that trips when there failures are
 
 The working of this client is demonstated in the RestClientFinal.html file.
 
-****************************Testing and Monitoring*****************************************************************************************
+****************************Testing and Monitoring******************************************************************************
 We've used newrelic.com's API to monitor the health of the server and provide us with graphical representation of
 i.   Throughput
 ii.  Transaction Time
 iii. Apdex Score, etc.
 This API provided a good way for us to tell when our server health varies and what values of CPU usage, connection rate etc. must be used.
 
-****************************Dynamic UI*****************************************************************************************
+****************************Dynamic UI******************************************************************************************
 A dynamic view of system health, updated every 2 seconds can be seen using the UI. The code can be found in index.html.
 
 
 
 Project contribution:
-1. Shounak Gujarathi (Architecture and Server-side implementation)
-2. SaiKrishanan Bhaskaran (Client Side implementation including the circuit breaker)
-3. Kartik Patil (Client side remedial logic, New Relic integration)
+1. Shounak Gujarathi (Architecture and Server-side implementation) 
+2. SaiKrishanan Bhaskaran (Client Side implementation including the circuit breaker) 
+3. Kartik Patil (Client side remedial logic, New Relic integration) 
 4. Sivakumar Sivaraman (Dynamic UI, Ajax integration)
